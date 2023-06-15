@@ -8,29 +8,31 @@ p.info {
 }
 
 
-img.sign {
-    float: right;  
-
-    width: 100px;
-    height: 100px;
+img {
+	float: right;
 }
 
 h1 {
-	background-color: #7f7fcf;
+	text-shadow: navy 1px 0px 10px;
+	color: white;
+
 }
 
 h2 {
-	border: solid 1px black;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right,white, #ffefaf);
 	margin: 5px;
 }
 
 div#zentai {
-	display: flex;
+	display: grid;
 	flex-direction: row;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 200px;
 	grid-gap: 20px;
 	width: 1024px;
+	padding: 5px;
 }
 
 div#zentai > div {
