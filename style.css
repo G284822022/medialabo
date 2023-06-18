@@ -3,4 +3,16 @@ body{
 }
 h1 {
     border-botttom-style: dotted;
+    color: purple;
+}
+h2 {
+    font-style: oblique 25deg;
+    border-bottom-style: soild;
+}
+h3 {
+    border-bottom-style: groove;
+    font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right,white, #ffefaf);
+	margin: 5px;
 }
