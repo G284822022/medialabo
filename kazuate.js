@@ -24,7 +24,7 @@ function hantei() {
   // 課題3-1における出力先はコンソール
   kaisu = kaisu + 1;
   console.log(kaisu + '回目の予想:' + yoso);
-}
+
 if(kaisu < 3) {
   if(yoso === kotae){
     console.log('正解です。おめでとう！');
@@ -44,5 +44,6 @@ if(kaisu < 3) {
 
 }else if(kaisu > 3){
   console.log("答えは" + kotae + "でした。すでにゲームは終わっています。");
+}
 }
 
