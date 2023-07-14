@@ -3,72 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>世界の天気</title>
-
     <script src="weather.js" defer></script>
+    <link rel="stylesheet"
+      href="project.css">
   </head>
   <body>
+    <h1>世界の天気</h1>
+    <label for="Weather">世界の天気</label>
+    <select name="Weather" id="Weather">
+      <option value="">国を選んでください</option>
+      <option value="pekin">北京</option>
+
+    </select>
+    <button id="btn">検索</button>
   <table>
     <thead>
       <tr>
         <th colspan="2">世界の天気 (検索結果1件)</th>
       </tr> 
     </thead>
-    <tbody>
-      <tr>
-        <td>緯度:</td>
-        <td>116.3972</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>経度:</td>
-        <td>39.9075</td>
-     </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>天気:</td>
-        <td>曇りがち</td>
-     </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>最低気温:</td>
-        <td>9.94</td>
-     </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>最高気温:</td>
-        <td>9.94</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>湿度:</td>
-        <td>14</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>風速:</td>
-        <td>2.65</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>風向:</td>
-        <td>197</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>都市名:</td>
-        <td>北京市</td>
-        </tr>
-      </tbody>
    </table>
    
-   
+   <div id="result"></div>
   </body>
 </html>

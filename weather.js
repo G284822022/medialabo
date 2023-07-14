@@ -46,4 +46,49 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+console.log(data.coord.lon);
+console.log(data.coord.lat);
+console.log(data.weather[0].description);
+console.log(data.main.temp_min);
+console.log(data.main.temp_max);
+console.log(data.main.humidity);
+console.log(data.wind.speed);
+console.log(data.wind.deg);
+console.log(data.name);
 
+let r=document.querySelector('div#result');
+let p1=document.createElement('p');
+p1.textContent =data.coord.lon;
+r.insertAdjacentElement('beforeend', p1);
+
+let p2=document.createElement('p');
+p2.textContent =data.coord.lat;
+r.insertAdjacentElement('beforeend', p2);
+
+let p3=document.createElement('p');
+p3.textContent =data.weather[0].description;
+r.insertAdjacentElement('beforeend', p3);
+
+let p4=document.createElement('p');
+p4.textContent =data.main.temp_min;
+r.insertAdjacentElement('beforeend', p4);
+
+let p5=document.createElement('p');
+p5.textContent =data.main.temp_max;
+r.insertAdjacentElement('beforeend', p5);
+
+let p6=document.createElement('p');
+p6.textContent =data.main.humidity;
+r.insertAdjacentElement('beforeend', p6);
+
+let p7=document.createElement('p');
+p7.textContent =data.wind.speed;
+r.insertAdjacentElement('beforeend', p7);
+
+let p8=document.createElement('p');
+p8.textContent =data.wind.deg;
+r.insertAdjacentElement('beforeend', p8);
+
+let p9=document.createElement('p');
+p9.textContent =data.name;
+r.insertAdjacentElement('beforeend', p9);
