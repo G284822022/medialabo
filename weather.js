@@ -186,7 +186,7 @@ function showError(err) {
 
 // 通信の最後にいつも実行する処理
 function finish() {
-  console.log('Ajax 通信が終わりました');
+  console.log('Ajax 通信が終わりました.');
 }
 
 
