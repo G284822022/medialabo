@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>世界の天気</title>
     <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <link rel="stylesheet"
       href="project.css">
   </head>
@@ -13,6 +14,16 @@
     <select name="Weather" id="Weather">
       <option value="">国を選んでください</option>
       <option value="pekin">北京</option>
+      <option value="kairo">カイロ</option>
+      <option value="mosukuwa">モスクワ</option>
+      <option value="yohanesuburuku">ヨハネスブルク</option>
+      <option value="tokyo">東京</option>
+      <option value="sidoni">シドニー</option>
+      <option value="rondon">ロンドン</option>
+      <option value="pari">パリ</option>
+      <option value="riodejyaneiro">リオデジャネイロ</option>
+      <option value="newyork">ニューヨーク</option>
+      <option value="rosanzerusu">ロサンゼルス</option>
 
     </select>
     <button id="btn">検索</button>
@@ -22,6 +33,60 @@
         <th colspan="2">世界の天気 (検索結果1件)</th>
       </tr> 
     </thead>
+    <tbody>
+      <tr>
+        <td>緯度:</td>
+        <td id = "lon"></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>経度:</td>
+        <td id="lat"></td>
+     </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>天気:</td>
+        <td id="description"></td>
+     </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>最低気温:</td>
+        <td id="temp_min"></td>
+     </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>最高気温:</td>
+        <td id="temp_max"></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>湿度:</td>
+        <td id="humidity"></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>風速:</td>
+        <td id="speed"></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>風向:</td>
+        <td id="deg"></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>都市名:</td>
+        <td id="name"></td>
+        </tr>
+      </tbody>
    </table>
    
    <div id="result"></div>
